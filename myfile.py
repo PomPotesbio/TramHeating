@@ -5,12 +5,12 @@ from PIL import Image
 
 st.title ("Heating Consumption of Trams in Zürich")
 
-st.header("How many trams do you have? Would you sell any because I need one for personal use!")
+st.header("How many trams do you have?")
 st.divider()
 number_trams = st.slider('Number of trams', 0, 130, 25)
 st.write("I have that many trams. ", number_trams)
 
-st.write("How many would you give me?")
+st.write("How many require heating?")
 
 number = st.number_input("Insert a number", value=None, placeholder="Type a number...")
 st.write('The current number is ', number)
